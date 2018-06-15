@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient(name = "robert-microservice-account")
+@FeignClient(name = "account")
 public interface AccountFeignClient {
+
     @RequestMapping(value = "/user/profile/{id}", method = RequestMethod.GET)
     User findById(@PathVariable("id") Long id);
 

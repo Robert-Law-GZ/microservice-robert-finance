@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 public class FinanceController {
     private static final Logger LOGGER = LoggerFactory.getLogger(FinanceController.class);
-    private static String ACCOUNT_SERVICE_NAME = "robert-microservice-account";
+    private static String ACCOUNT_SERVICE_NAME = "account";
 
     @Autowired
     private AccountFeignClient accountFeignClient;
